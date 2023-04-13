@@ -74,7 +74,7 @@ if st.button("Predict"):
     pred = predict_if_stroke(age,hypertension,heart,glucose,bmi,female,male)
     
     if pred == 'Stroke':
-        st.error('This person might have STROKE')
+        st.error('This person is at risk of STROKE')
     elif pred == 'No Stroke':
         st.success('This person is not at risk of STROKE')
         
